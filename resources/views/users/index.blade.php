@@ -49,61 +49,7 @@
  <!--===== PROGRESS ENDS=======-->
 
 <!--=====HEADER START=======-->
-<header class="homepage1-menu">
-  <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
-      <div class="container headerfix">
-          <div class="row align-items-center row-bg1">
-              <div class="col-lg-2 col-md-6 col-6">
-                  <div class="vl-logo">
-                      <a href="index-2.html"><img src="assets/img/logo/Piclab.png" alt=""></a>
-                  </div>
-              </div>
-              <div class="col-lg-6 d-none d-lg-block">
-                  <div class="vl-main-menu text-center">
-                      <nav class="vl-mobile-menu-active">
-                          <ul>
-                              <li class="has-dropdown">
-                                  <a href="#">Home <span></i></span></a>
-                                  
-                              </li>
-
-                              <li class="has-dropdown">
-                                <a href="#">Tentang Kami <span></span></a>
-                                  
-                              </li>
-                              <li><a href="#">Layanan <span></span></a>
-                                
-                              </li>
-                              <li><a href="#">Blog dan Galeri <span></span></a>
-                                
-                              </li>
-                              <li><a href="#">Kontak kami <span></span></a>
-                                
-                              </li>
-                          </ul>
-                      </nav>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-6">
-                  <div class="vl-hero-btn d-none d-lg-block text-end">
-                    <div class="search-icon header__search header-search-btn">
-                      <a href="#"><img src="assets/img/icons/search1.svg" alt=""></a>
-                    </div>
-                          <span class="vl-btn-wrap text-end">
-                            <a href="contact.html" class="vl-btn1" style="overflow: hidden;">Login</a>
-                          </span>
-                          <button class="hamburger_menu"><img src="assets/img/icons/bars-icons1.svg" alt=""></button>
-                  </div>
-                  <div class="vl-header-action-item d-block d-lg-none">
-                      <button type="button" class="vl-offcanvas-toggle">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                      </button>
-                   </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</header>
+@include('users.components.header1')
 <!--=====HEADER END =======-->
 
   <!--===== SIDEBAR STARTS=======-->
@@ -433,7 +379,7 @@
                 <div class="names-area">
                   <div class="man-textarea">
                     <div class="man">
-                      <img src="assets/img/all-images/testimonial/testimonial-img6.png" alt="">
+                      <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
                     </div>
                     <div class="text">
                       <a href="team.html">Sheldon Jackson</a>
@@ -463,7 +409,7 @@
                 <div class="names-area">
                   <div class="man-textarea">
                     <div class="man">
-                      <img src="assets/img/all-images/testimonial/testimonial-img7.png" alt="">
+                      <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
                     </div>
                     <div class="text">
                       <a href="team.html">Sheldon Jackson</a>
@@ -493,38 +439,7 @@
                 <div class="names-area">
                   <div class="man-textarea">
                     <div class="man">
-                      <img src="assets/img/all-images/testimonial/testimonial-img8.png" alt="">
-                    </div>
-                    <div class="text">
-                      <a href="team.html">Sheldon Jackson</a>
-                      <div class="space12"></div>
-                      <p>Owner FeatherDev</p>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-boxarea">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="26" viewBox="0 0 32 26" fill="none">
-                  <path d="M17.4814 6.11477C17.4814 7.7281 17.9031 9.08294 18.7464 10.1793C19.3441 10.9346 20.155 11.4308 21.1793 11.6679C22.1876 11.9026 23.1409 11.9191 24.0026 11.7193C24.2959 13.4609 23.8193 15.3053 22.6093 17.2596C21.3968 19.2127 19.8336 20.6812 17.9196 21.6651L20.8181 25.8359C22.2848 25.1099 23.6781 24.1896 24.9614 23.0768C26.2631 21.9639 27.4181 20.6843 28.4448 19.2378C29.4714 17.7913 30.2414 16.1578 30.7364 14.3061C31.2314 12.4544 31.3689 10.5661 31.1324 8.62277C30.8244 6.0561 29.9958 4.00277 28.6464 2.4811C27.2983 0.93988 25.619 0.16927 23.6084 0.16927C21.8393 0.16927 20.3708 0.700937 19.2084 1.77894C18.0583 2.83494 17.4839 4.28205 17.4851 6.12027L17.4814 6.11477ZM0.754095 6.11477C0.754095 7.7281 1.17576 9.08294 2.01909 10.1793C2.61798 10.9493 3.42893 11.4485 4.45193 11.6771C5.47859 11.9032 6.4197 11.9167 7.27526 11.7174C7.56859 13.4408 7.11026 15.2924 5.8966 17.2541C4.68659 19.1974 3.1246 20.6641 1.2106 21.6541L4.10176 25.8359C5.56965 25.1099 6.95076 24.1902 8.24509 23.0768C9.55849 21.9473 10.725 20.6576 11.7174 19.2378C12.7368 17.7894 13.4958 16.1578 13.9908 14.3061C14.4936 12.4559 14.6287 10.525 14.3886 8.62277C14.0843 6.0561 13.2593 4.00277 11.9136 2.4811C10.5691 0.95088 8.89287 0.185772 6.88476 0.185772C5.11254 0.183327 3.64465 0.719269 2.48109 1.7936C1.33098 2.8496 0.755316 4.29671 0.754095 6.13494V6.11477Z" fill="black"/>
-                </svg>
-                <ul>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="space16"></div>
-                <p>“Partnering with Renev was a turning point for our business. From an start, their team demonstrated level professionalism and expertise that’s hard to find. They took time understand not only our immediate needs but also our long-term vision, and they crafted a solution that truly aligned with both. </p>
-                <div class="space32"></div>
-                <div class="names-area">
-                  <div class="man-textarea">
-                    <div class="man">
-                      <img src="assets/img/all-images/testimonial/testimonial-img9.png" alt="">
+                      <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
                     </div>
                     <div class="text">
                       <a href="team.html">Sheldon Jackson</a>
@@ -555,7 +470,38 @@
                 <div class="names-area">
                   <div class="man-textarea">
                     <div class="man">
-                      <img src="assets/img/all-images/testimonial/testimonial-img10.png" alt="">
+                      <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
+                    </div>
+                    <div class="text">
+                      <a href="team.html">Sheldon Jackson</a>
+                      <div class="space12"></div>
+                      <p>Owner FeatherDev</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-boxarea">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="26" viewBox="0 0 32 26" fill="none">
+                  <path d="M17.4814 6.11477C17.4814 7.7281 17.9031 9.08294 18.7464 10.1793C19.3441 10.9346 20.155 11.4308 21.1793 11.6679C22.1876 11.9026 23.1409 11.9191 24.0026 11.7193C24.2959 13.4609 23.8193 15.3053 22.6093 17.2596C21.3968 19.2127 19.8336 20.6812 17.9196 21.6651L20.8181 25.8359C22.2848 25.1099 23.6781 24.1896 24.9614 23.0768C26.2631 21.9639 27.4181 20.6843 28.4448 19.2378C29.4714 17.7913 30.2414 16.1578 30.7364 14.3061C31.2314 12.4544 31.3689 10.5661 31.1324 8.62277C30.8244 6.0561 29.9958 4.00277 28.6464 2.4811C27.2983 0.93988 25.619 0.16927 23.6084 0.16927C21.8393 0.16927 20.3708 0.700937 19.2084 1.77894C18.0583 2.83494 17.4839 4.28205 17.4851 6.12027L17.4814 6.11477ZM0.754095 6.11477C0.754095 7.7281 1.17576 9.08294 2.01909 10.1793C2.61798 10.9493 3.42893 11.4485 4.45193 11.6771C5.47859 11.9032 6.4197 11.9167 7.27526 11.7174C7.56859 13.4408 7.11026 15.2924 5.8966 17.2541C4.68659 19.1974 3.1246 20.6641 1.2106 21.6541L4.10176 25.8359C5.56965 25.1099 6.95076 24.1902 8.24509 23.0768C9.55849 21.9473 10.725 20.6576 11.7174 19.2378C12.7368 17.7894 13.4958 16.1578 13.9908 14.3061C14.4936 12.4559 14.6287 10.525 14.3886 8.62277C14.0843 6.0561 13.2593 4.00277 11.9136 2.4811C10.5691 0.95088 8.89287 0.185772 6.88476 0.185772C5.11254 0.183327 3.64465 0.719269 2.48109 1.7936C1.33098 2.8496 0.755316 4.29671 0.754095 6.13494V6.11477Z" fill="black"/>
+                </svg>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <div class="space16"></div>
+                <p>“Partnering with Renev was a turning point for our business. From an start, their team demonstrated level professionalism and expertise that’s hard to find. They took time understand not only our immediate needs but also our long-term vision, and they crafted a solution that truly aligned with both. </p>
+                <div class="space32"></div>
+                <div class="names-area">
+                  <div class="man-textarea">
+                    <div class="man">
+                      <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
                     </div>
                     <div class="text">
                       <a href="team.html">Sheldon Jackson</a>
@@ -589,27 +535,27 @@
             </div>
             <div class="swiper-slide">
               <div>
-                <img src="assets/img/all-images/testimonial/testimonial-img6.png" alt="">
+                <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
               </div>
             </div>
             <div class="swiper-slide">
               <div>
-                <img src="assets/img/all-images/testimonial/testimonial-img7.png" alt="">
+                <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
               </div>
             </div>
             <div class="swiper-slide">
               <div>
-                <img src="assets/img/all-images/testimonial/testimonial-img8.png" alt="">
+                <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
               </div>
             </div>
             <div class="swiper-slide">
               <div>
-                <img src="assets/img/all-images/testimonial/testimonial-img9.png" alt="">
+                <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
               </div>
             </div>
             <div class="swiper-slide">
               <div>
-                <img src="assets/img/all-images/testimonial/testimonial-img10.png" alt="">
+                <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
               </div>
             </div>
           </div>
@@ -808,89 +754,11 @@
   </div>
 </div>
 <!--===== CTA AREA STARTS =======-->
-<div class="cta-btn-area sp8">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="btn-area">
-          <a href="contact.html" class="cta-btn1">Get In touch</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+@include('users.components.cta')
 <!--===== CTA AREA ENDS =======-->
 
 <!--===== FOOTER AREA STARTS =======-->
-<div class="vl-footer1-section-area sp8">
-  <img src="assets/img/elements/elements6.png" alt="" class="elements6">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="footer-logo1">
-          <img src="assets/img/logo/logo2.png" alt="">
-          <div class="space16"></div>
-          <p>At Renev, we believe that every business has the potential to the thrive with the right guidance.</p>
-          <div class="space24"></div>
-          <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#" class="m-0"><i class="fa-brands fa-youtube"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="space30 d-md-none d-block"></div>
-        <div class="vl-footer-widget first-padding">
-          <h3>Quick Links</h3>
-          <div class="space4"></div>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="project.html">Project</a></li>
-            <li><a href="#">Pricing Plan</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </div> 
-      <div class="col-lg-3 col-md-6">
-        <div class="vl-footer-widget">
-          <div class="space30 d-lg-none d-block"></div>
-          <h3>Contact Us</h3>
-          <ul>
-            <li><a href="tel:+11234567890"><img src="assets/img/icons/phn1.svg" alt="">+1 123 456 7890</a></li>
-            <li><a href="#"><img src="assets/img/icons/location1.svg" alt="">421 Allen, Mexico 4233</a></li>
-            <li><a href="renevagency%40com.html"><img src="assets/img/icons/email1.svg" alt="">renevagency@com</a></li>
-            <li><a href="#"><img src="assets/img/icons/global1.svg" alt="">renevagency.com</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="vl-footer-widget">
-          <div class="space30 d-lg-none d-block"></div>
-          <h3>Join Newsletter</h3>
-          <div class="space24"></div>
-          <img src="assets/img/all-images/others/others-img2.png" alt="">
-          <div class="space18"></div>
-          <form>
-            <input type="text" placeholder="Email">
-            <button type="submit" class="vl-btn1">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="space60"></div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="vl-copyright-area">
-          <p>© Copyright 2024 - Renev. All Right Reserved</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+@include('users.components.footer')
 <!--===== FOOTER AREA ENDS =======-->
 
 <!--===== JS SCRIPT LINK =======-->

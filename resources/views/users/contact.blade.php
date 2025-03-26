@@ -48,65 +48,7 @@
  <!--===== PROGRESS ENDS=======-->
 
 <!--=====HEADER START=======-->
-<header class="homepage1-menu">
-  <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
-      <div class="container headerfix">
-          <div class="row align-items-center row-bg1">
-              <div class="col-lg-2 col-md-6 col-6">
-                  <div class="vl-logo1">
-                      <a href="index-2.html"><img src="assets/img/logo/lingkaran4.png" alt="">AUTOBOOTH</a>
-                  </div>
-              </div>
-              <div class="col-lg-6 d-none d-lg-block">
-                  <div class="vl-main-menu text-center">
-                      <nav class="vl-mobile-menu-active">
-                          <ul>
-                              <li class="has-dropdown">
-                                  <a href="#">Home <span></i></span></a>
-                                  
-                              </li>
-
-                              <li class="has-dropdown">
-                                <a href="#">Tentang Kami <span></span></a>
-                                  
-                              </li>
-                              <li><a href="#">Layanan <span></span></a>
-                                
-                              </li>
-                              <li><a href="#">Blog dan Galeri <span></span></a>
-                                
-                              </li>
-                              <li><a href="#">Kontak kami <span></span></a>
-                                
-                              </li>
-                          </ul>
-                      </nav>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-6">
-                  <div class="vl-hero-btn d-none d-lg-block text-end">
-                    <div class="search-icon header__search header-search-btn">
-                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color: white;" width="24" height="24">
-  <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" fill="currentColor"/>
-</svg>
-
-
-                    </div>
-                          <span class="vl-btn-wrap text-end">
-                            <a href="contact.html" class="vl-btn1" style="overflow: hidden;">Login</a>
-                          </span>
-                          <button class="hamburger_menu"><img src="assets/img/icons/bars-icons1.svg" alt=""></button>
-                  </div>
-                  <div class="vl-header-action-item d-block d-lg-none">
-                      <button type="button" class="vl-offcanvas-toggle">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                      </button>
-                   </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</header>
+@include('users.components.header2')
 <!--=====HEADER END =======-->
 
   <!--===== SIDEBAR STARTS=======-->
@@ -478,90 +420,13 @@
     </div>
   </div>
 </div>
+
 <!--===== CTA AREA STARTS =======-->
-<div class="cta-btn-area sp8">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="btn-area">
-          <a href="contact.html" class="cta-btn1">Get In touch</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+@include('users.components.cta')
 <!--===== CTA AREA ENDS =======-->
 
 <!--===== FOOTER AREA STARTS =======-->
-<div class="vl-footer1-section-area sp8">
-  <img src="assets/img/elements/elements6.png" alt="" class="elements6">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="footer-logo1">
-          <img src="assets/img/logo/logo2.png" alt="">
-          <div class="space16"></div>
-          <p>At Renev, we believe that every business has the potential to the thrive with the right guidance.</p>
-          <div class="space24"></div>
-          <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#" class="m-0"><i class="fa-brands fa-youtube"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="space30 d-md-none d-block"></div>
-        <div class="vl-footer-widget first-padding">
-          <h3>Quick Links</h3>
-          <div class="space4"></div>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="project.html">Project</a></li>
-            <li><a href="#">Pricing Plan</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </div> 
-      <div class="col-lg-3 col-md-6">
-        <div class="vl-footer-widget">
-          <div class="space30 d-lg-none d-block"></div>
-          <h3>Contact Us</h3>
-          <ul>
-            <li><a href="tel:+11234567890"><img src="assets/img/icons/phn1.svg" alt="">+1 123 456 7890</a></li>
-            <li><a href="#"><img src="assets/img/icons/location1.svg" alt="">421 Allen, Mexico 4233</a></li>
-            <li><a href="renevagency%40com.html"><img src="assets/img/icons/email1.svg" alt="">renevagency@com</a></li>
-            <li><a href="#"><img src="assets/img/icons/global1.svg" alt="">renevagency.com</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="vl-footer-widget">
-          <div class="space30 d-lg-none d-block"></div>
-          <h3>Join Newsletter</h3>
-          <div class="space24"></div>
-          <img src="assets/img/all-images/others/others-img2.png" alt="">
-          <div class="space18"></div>
-          <form>
-            <input type="text" placeholder="Email">
-            <button type="submit" class="vl-btn1">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="space60"></div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="vl-copyright-area">
-          <p>© Copyright 2024 - Renev. All Right Reserved</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+@include('users.components.footer')
 <!--===== FOOTER AREA ENDS =======-->
 
 <!--===== JS SCRIPT LINK =======-->
